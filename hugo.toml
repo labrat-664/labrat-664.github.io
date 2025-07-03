@@ -1,5 +1,0 @@
-baseURL = 'https://www.bilgerat.xyz/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'hugo-brewm'
-publishDir = 'docs'
