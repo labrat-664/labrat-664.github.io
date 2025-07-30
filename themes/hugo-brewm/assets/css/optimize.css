@@ -1,25 +1,22 @@
-#menu-footer a:hover,
-#menu-footer a:focus,
+a,
 a.replies.active,
 a.reblogs.active,
 #has-author-name-menu a:hover,
 #has-author-name-menu a:focus,
-#related a:hover,
-#related a:focus {
+#contentinfo a:hover,
+#contentinfo a:focus {
     color: var(--ac);
 }
 
 .feed-item > hgroup > div a,
-#related a {
+#contentinfo a {
     color: var(--fg);
 }
 
 .readingTime,
 .feed-item > section > div,
 .feed-item > hgroup > div,
-.feed-item:hover img,
-#contrib-menu a:hover,
-#contrib-menu a:focus {
+.feed-item:hover img {
     opacity: 0.86;
 }
 
@@ -60,6 +57,7 @@ td.lntd:first-child code.hljs {
     display: none;
 }
 
+a,
 #has-a11y[open] #a11y,
 #logo #logotype__text,
 .marginpar-ctrl:checked + label::before,
@@ -67,12 +65,6 @@ details[open] > .anchor:after,
 details[open] .on-plank,
 .l1 details[open] > ul,
 .marginpar-ctrl:checked + label + .marginpar,
-#has-l10n a:hover,
-#has-l10n a:focus,
-#top-nav a:hover,
-#top-nav a:focus,
-.anchor:hover,
-.anchor:focus,
 #has-a11y[open] > summary::before,
 #has-a11y[open] #a11y,
 #has-search[open] .icon::before,
@@ -85,19 +77,19 @@ details[open] > summary > .menu-icon::before,
             animation: var(--anm);
 }
 
+a::after,
+#main-footer a::after,
 hr.ldots::after,
 #to-top::before,
 #lightSwitch + label::before,
 .hand,
-.pagination .rfill a::before,
 .carousel__viewport__slide:last-child > nav a::before,
 #back::before,
-.feed-item:hover,
-.feed-item:focus-within,
-ul.carousel__viewport > li:hover,
-ul.carousel__viewport > li:focus-within,
+.feed-item,
+ul.carousel__viewport > li,
+.pagination .rfill a::before,
 .pagination .lfill a::after,
-#list-tags .underline::after,
+.tr::after,
 .carousel__viewport__slide:first-child > nav a::after,
 .parent-anchor a::after,
 #i18n-menu a::after,
@@ -116,7 +108,7 @@ input.toggle + label::after,
 #setContrast label,
 .marginpar-ctrl + label::before,
 .anchor:after,
-#has-share i:hover {
+#has-share i {
     -webkit-transition: var(--tst);
        -moz-transition: var(--tst);
          -o-transition: var(--tst);
@@ -142,9 +134,7 @@ details[open] .on-plank,
 
 hgroup,
 hgroup > h1,
-figure,
-#main-footer-secondary,
-#menu-footer {
+figure {
     margin: 0;
 }
 

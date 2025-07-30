@@ -2,7 +2,7 @@
     --tiny: 0.618rem;
     --scriptsize: 0.786rem;
     --footnotesize: 1rem;
-    --small: 1.144rem;
+    --small: 1.111rem;
     --normalsize: 1.272rem;
     --large: 1.414rem;
     --Large: 1.618rem;
@@ -55,6 +55,11 @@ blockquote footer {
     font-size: 0.9em;
     margin: 1em 0;
     text-align: end;
+}
+
+hr {
+    border-top: var(--border);
+    border-width: 1pt 0 0 0;
 }
 
 kbd {
@@ -182,6 +187,7 @@ tbody tr:nth-child(2n) {
     background-color: #80808008;
 }
 
+#license,
 .carousel__viewport h2,
 .carousel__viewport h3,
 .hero__content h1,
@@ -194,6 +200,7 @@ tbody tr:nth-child(2n) {
     vertical-align: middle;
     text-transform: uppercase;
     letter-spacing: 2pt;
+    font-size: 86%;
     font-weight: 700;
     font-variant: small-caps;
     font-style: normal;

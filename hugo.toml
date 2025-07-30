@@ -1,5 +1,5 @@
-baseURL = 'https://www.bilgerat.xyz/'
+baseURL = 'https://bilgerat.xyz/posts'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = 'hugo-brewm'
+theme = 'hugo-theme-console'
 publishDir = 'docs'

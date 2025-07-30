@@ -50,7 +50,8 @@
 }
 
 #main-article [role=doc-credit],
-#main-article [role=doc-colophon] {
+#main-article [role=doc-colophon],
+#join-discussion {
     font-size: var(--small);
 }
 
@@ -224,10 +225,6 @@ header time {
     flex-direction: row-reverse;
 }
 
-#join-discussion {
-    font-size: var(--small);
-}
-
 #join-discussion:hover,
 #join-discussion:focus {
     background: var(--ac);
@@ -237,4 +234,9 @@ header time {
     margin-right: 5pt;
     border-right: var(--border);
     color: #1185fe;
+}
+
+#comments > *,
+.giscus {
+    width: var(--golden-ratio);
 }

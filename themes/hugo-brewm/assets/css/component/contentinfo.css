@@ -1,6 +1,7 @@
 #contentinfo {
     display: grid;
     grid-template-columns: 6fr 4fr;
+    font-size: var(--small);
     gap: var(--medskip);
 }
 
@@ -26,7 +27,6 @@
     padding: 1.4rem 1.4rem 1rem;
     height: fit-content;
     line-height: 1.618;
-    font-size: var(--small);
 }
 
 #contrib-menu li {
@@ -35,11 +35,19 @@
 
 #contrib-menu a {
     display: inline-block;
+    border: none;
     border-radius: 1ex;
     background: var(--ac);
     padding: 4pt 9pt 3pt 7pt;
     width: 100%;
     text-align: center;
+    color: var(--bg);
+}
+
+#contrib-menu a:hover,
+#contrib-menu a:focus {
+    --anm: none;
+    opacity: 0.86;
     color: var(--bg);
 }
 
@@ -75,6 +83,11 @@
 
 #contentinfo ol li.see-more::before {
     content: '>';
+}
+
+#related a {
+    position: relative;
+    top: 0.25ex;
 }
 
 #has-timeline {

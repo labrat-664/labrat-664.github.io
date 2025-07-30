@@ -68,7 +68,6 @@
     (resources.Get "css/component/hero.css") 
     (resources.Get "css/layout/_default/single.css")
     (resources.Get "css/component/marginpar.css")
-    (resources.Get "css/media/print.css")
     (resources.Get "css/optimize.css")
     (resources.Get "css/support.css")
 }}
@@ -80,27 +79,33 @@
     {{- $baseFonts = $baseFonts | append $roman $sans $teletype }}
 {{- end }}
 
-{{- $custom := resources.Get "css/custom.css" }}
-{{- $extrasSty := slice $custom }}
+{{- $extrasSty := slice }}
 
 {{- $search := resources.Get "css/component/search.css" }}
 {{- if site.Params.search.enable }}
     {{- $extrasSty = $extrasSty | append $search }}
 {{- end }}
 
+{{- if not site.Params.DisableFootBar }}
+    {{- $bbar := resources.Get "css/component/mainfooter.css" }}
+    {{- $extrasSty = $extrasSty | append $bbar }}
+{{- end }}
 
 {{ $zen := or site.Params.BearMode site.Params.ZenMode }}
 {{- if not $zen }}
     {{- $clock := resources.Get "css/component/clock.css" }}
     {{- $contentinfo := resources.Get "css/component/contentinfo.css" }}
-    {{- $extrasSty = $extrasSty | append $contentinfo }}
+    {{- $extrasSty = $extrasSty | append $contentinfo $clock }}
     {{- if site.Params.posts.share }}
         {{- $share := resources.Get "css/component/share.css" }}
         {{- $extrasSty = $extrasSty | append $share }}
     {{- end }}
 {{- end }}
 
-{{- $hugo_brewm := ($baseFonts | append ($baseSty | append $extrasSty)) | resources.Concat "css/hugo-brewm.css" | minify }}
+{{- $print := resources.Get "css/media/print.css" }}
+{{- $custom := resources.Get "css/custom.css" }}
+{{- $order := $baseFonts | append $baseSty | append $extrasSty | append $print $custom }}
+{{- $hugo_brewm := $order | resources.Concat "css/hugo-brewm.css" | minify }}
 
 {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ $hugo_brewm.Permalink }}">
@@ -134,7 +139,7 @@
 
 {{- define "partials/head/css/verbatim.html" }}
     {{ "<!-- css/verbatim.html -->" | safeHTML }}
-    {{- $verbatimSty := resources.Get "css/typesetting/verbatim.css" | minify }}
+    {{- $verbatimSty := resources.Get "css/verbatim.css" | minify }}
     {{- if eq hugo.Environment "development" }}
         <link href="{{ $verbatimSty.Permalink }}" rel="stylesheet" type="text/css">
     {{- else }}
