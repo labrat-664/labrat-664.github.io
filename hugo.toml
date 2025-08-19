@@ -1,4 +1,5 @@
-baseURL = 'https://bilgerat.xyz/'
+baseURL = 'bilgerat.xyz'
 languageCode = 'en-us'
 title = "Welcome to bilgerat's cave"
 theme='hugo-brewm'
+publishDir = 'docs'
