@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bilgerat&#39;s Cave</title>
+    <link>https://bilgerat.xyz/</link>
+    <description>Recent Posts on Bilgerat&#39;s Cave</description>
+    <generator>Hugo 0.148.0-DEV</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 Aug 2025 19:40:52 +0530</lastBuildDate>
+    <atom:link href="https://bilgerat.xyz/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
