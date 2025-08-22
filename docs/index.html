@@ -9,6 +9,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bilgerat&#39;s Cave</title>
 <meta name="author" content="">
+<meta name="description" content="Hero Section / Greeter This exampleSite is deployed on Github Pages within it’s theme repository.
+Lorem ipsum dolor sit amet, consectetur adipiscing …" >
 <meta name="keywords" content="Homepage">
 <link rel="canonical" href="https://bilgerat.xyz/">
 
@@ -70,21 +72,40 @@
         <!-- main/header.html -->
         <div id="top" role="presentation">
             
+                <div id="list-taxonomy" class="carousel">
+                    <div class="carousel__viewport">
+                        
+            <!-- listing.html -->
+                    </div>
+                </div>
+                
+    <!-- hero.html -->
+    <section class="hero" aria-label="Homepage" tabindex="0">
+        <picture class="hero__image ">
+            <img src="https://raw.githubusercontent.com/foxihd/hugo-et-hd/master/static/svg/flowlines/22.svg" alt=""/>
+        </picture>
+        <div class="hero__content"><h2 id="hero-section--greeter">Hero Section / Greeter</h2>
+<p><strong>This exampleSite is deployed on Github Pages within it&rsquo;s theme repository.</strong></p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>Integer nec posuere quam. Mauris et rhoncus lacus. Pellentesque non sem cursus, interdum nunc ut, efficitur magna. Maecenas consectetur ornare enim, nec tempus tellus vestibulum in. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum venenatis ex non auctor malesuada. Curabitur semper elit sit amet orci facilisis fermentum. Nullam consectetur risus eget leo rhoncus egestas. Suspendisse at diam congue, venenatis augue et, ornare lectus. Curabitur ac lorem ullamcorper, consequat justo at, scelerisque lacus. Vivamus ac erat mauris. Nullam ut nibh tincidunt, placerat magna nec, fermentum tortor. Fusce ut orci sed neque sagittis rhoncus. Morbi eleifend, mauris sit amet dignissim dignissim, mauris nisi tempus orci, a congue elit ex quis ex.</p>
+<p>&mdash; Lorem Ipsum</p>
+
+        </div>
+    </section>
+
         </div>
         
-        <div class="pagewidth">
-            <div style="display:flex;height:var(--vbody);width:100%;">
-        <section class="hero" style="margin: auto; width: var(--canonic);" aria-labelledby="noArticle">
-            <picture class="hero__image">
-                <img src="https://i.pinimg.com/736x/bf/34/76/bf3476c1569c5af162779ecbb4134c3a.jpg" alt="cat is unsure on what to do with his laptop">
-            </picture>
-            <div class="hero__content">
-                <h1 id="noArticle" style="font-size:var(--large);font-weight:500;">No articles to show.</h1>
-                <p>It appears that our author ran out of coffee... Keep calm, we&#39;ll brew one shortly!</p>
-            </div>
-        </section>
-    </div>
-        </div>
+        
+            <section id="list-posts" class="pagewidth" >
+                <header  class="section-title">
+                    <strong id="list-post-heading">
+                                Recent Posts
+                    </strong>
+                </header>
+                    <div role="feed" aria-busy="false" aria-labelledby="list-post-heading">
+                    </div>
+                    
+            </section>
         <!-- main/footer.html -->
     </main>
     <!-- footer.html -->
