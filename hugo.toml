@@ -2,4 +2,5 @@ baseURL = 'https://bilgerat.xyz'
 languageCode = 'en-us'
 title = "Bilgerat's Cave"
 theme='hugo-brewm'
-publishDir = 'docs'
+publishDir ='docs'
+contentDir= 'content'
